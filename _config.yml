@@ -1,0 +1,83 @@
+# VGDC Website Configuration
+
+# GitHub Pages Settings
+title: "VGDC - Stetson University"
+description: "Video Game Development Club at Stetson University - Where passion meets pixels"
+baseurl: ""
+url: "https://vgdc-su.github.io"
+
+# Site Settings
+lang: en-US
+timezone: America/New_York
+
+# SEO Settings
+author: "VGDC Stetson University"
+keywords: 
+  - "game development"
+  - "stetson university"
+  - "video games"
+  - "programming"
+  - "unity"
+  - "unreal engine"
+  - "student club"
+
+# Contact Information
+email: "vgdc@stetson.edu"
+github_username: "VGDC-SU"
+
+# Meeting Information
+meeting_frequency: "Every other Wednesday"
+meeting_time: "7:00 PM - 8:30 PM"
+meeting_location: "TBD - Stetson University Campus"
+
+# Social Media
+discord_server: "https://discord.gg/7ZB5yRZnz7"
+engage_link: "https://stetson.campuslabs.com/engage/actioncenter/organization/videogamedev"
+twitter_handle: ""
+instagram_handle: ""
+
+# Theme Configuration
+theme_color: "#6366f1"
+background_color: "#0f0f23"
+
+# Navigation Menu
+navigation:
+  - name: "Home"
+    url: "#home"
+  - name: "About"
+    url: "#about"
+  - name: "Meetings"
+    url: "#meetings"
+  - name: "Resources"
+    url: "#resources"
+  - name: "Projects"
+    url: "#projects"
+  - name: "Join Us"
+    url: "#join"
+
+# Featured Resources
+featured_resources:
+  - name: "Unity"
+    description: "Popular 2D/3D game engine"
+    url: "https://unity.com/"
+    category: "Game Engine"
+    price: "Free"
+  
+  - name: "Unreal Engine"
+    description: "Industry-standard engine"
+    url: "https://www.unrealengine.com/"
+    category: "Game Engine"
+    price: "Free"
+  
+  - name: "Godot"
+    description: "Open-source game engine"
+    url: "https://godotengine.org/"
+    category: "Game Engine"
+    price: "Free"
+
+# Club Statistics (to be updated)
+stats:
+  members: 0
+  projects_completed: 0
+  game_jams_participated: 0
+  meetings_held: 0

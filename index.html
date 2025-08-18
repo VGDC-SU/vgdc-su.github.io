@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VGDC - Video Game Development Club | Stetson University</title>
+    <meta name="description" content="Join Stetson University's Video Game Development Club. Connect with fellow game developers, access resources, and bring your game ideas to life.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#6366f1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="VGDC">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect width='180' height='180' fill='%236366f1' rx='40'/><text x='90' y='110' font-family='Arial' font-size='70' text-anchor='middle' fill='white'>🎮</text></svg>">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-gamepad"></i>
+                <span>VGDC</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#meetings" class="nav-link">Meetings</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#resources" class="nav-link">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#join" class="nav-link">Join Us</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Level Up</span> Your Game Development Journey
+                </h1>
+                <p class="hero-subtitle">
+                    Join Stetson University's Video Game Development Club and transform your passion into playable experiences. Connect, create, and collaborate with fellow developers.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#join" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        Join the Club
+                    </a>
+                    <a href="#about" class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i>
+                        Learn More
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-elements">
+                    <div class="game-element" style="--delay: 0s">🎮</div>
+                    <div class="game-element" style="--delay: 1s">🕹️</div>
+                    <div class="game-element" style="--delay: 2s">👾</div>
+                    <div class="game-element" style="--delay: 3s">🎯</div>
+                    <div class="game-element" style="--delay: 4s">🚀</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About VGDC</h2>
+                <p class="section-subtitle">Where ideas become interactive experiences</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Connect & Collaborate</h3>
+                    <p>Meet passionate developers, artists, designers, and storytellers. Find your perfect team members and bring diverse perspectives to your projects.</p>
+                </div>
+                
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Learn & Grow</h3>
+                    <p>Access comprehensive resources, tutorials, and mentorship. From Unity basics to advanced programming concepts, we've got you covered.</p>
+                </div>
+                
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Create & Showcase</h3>
+                    <p>Work on exciting projects, participate in game jams, and showcase your creations. Build a portfolio that opens doors to your future.</p>
+                </div>
+            </div>
+
+            <div class="mission-statement">
+                <h3>Our Mission</h3>
+                <p>To foster a vibrant community of game developers at Stetson University, providing resources, mentorship, and collaborative opportunities for students to explore the exciting world of game development regardless of their experience level.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meetings Section -->
+    <section id="meetings" class="meetings">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Regular Meetings</h2>
+                <p class="section-subtitle">Every other week, we come together to share, learn, and grow</p>
+            </div>
+
+            <div class="meeting-info">
+                <div class="meeting-schedule">
+                    <div class="schedule-card">
+                        <div class="schedule-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3>When We Meet</h3>
+                        <h4>(Subject To Change)</h4>
+                        <p class="schedule-time">Every Other Wednesday</p>
+                        <p class="schedule-detail">6:00 PM - 7:00 PM</p>
+                        <p class="schedule-note">Check our Discord for the exact dates and any updates!</p>
+                    </div>
+
+                    <div class="schedule-card">
+                        <div class="schedule-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Where We Meet</h3>
+                        <p class="schedule-time">Elizabeth Hall, Room 210</p>
+                        <p class="schedule-detail">Stetson University Campus</p>
+                        <p class="schedule-note">Room details will be announced before each meeting</p>
+                    </div>
+                </div>
+
+                <div class="meeting-agenda">
+                    <h3>What We Do In Meetings</h3>
+                    <div class="agenda-grid">
+                        <div class="agenda-item">
+                            <div class="agenda-icon">
+                                <i class="fas fa-presentation-screen"></i>
+                            </div>
+                            <h4>Progress Showcases</h4>
+                            <p>Share what you've been working on and get feedback from the community</p>
+                        </div>
+                        
+                        <div class="agenda-item">
+                            <div class="agenda-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h4>Workshops & Tutorials</h4>
+                            <p>Learn new skills with hands-on sessions led by members and guest speakers</p>
+                        </div>
+                        
+                        <div class="agenda-item">
+                            <div class="agenda-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h4>Team Formation</h4>
+                            <p>Find collaborators for your next project or join existing teams</p>
+                        </div>
+                        
+                        <div class="agenda-item">
+                            <div class="agenda-icon">
+                                <i class="fas fa-question-circle"></i>
+                            </div>
+                            <h4>Q&A Sessions</h4>
+                            <p>Get help with technical challenges and creative roadblocks</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="resources">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Resources & Tools</h2>
+                <p class="section-subtitle">Everything you need to start your game development journey</p>
+            </div>
+
+            <div class="resources-grid">
+                <div class="resource-category">
+                    <h3>
+                        <i class="fas fa-cogs"></i>
+                        Game Engines
+                    </h3>
+                    <div class="resource-list">
+                        <div class="resource-item">
+                            <div class="resource-header">
+                                <h4>Unity</h4>
+                                <span class="resource-badge free">Free</span>
+                            </div>
+                            <p>Popular 2D/3D engine with C# scripting. Great for beginners and professionals alike.</p>
+                            <a href="https://unity.com/" target="_blank" class="resource-link">
+                                Download Unity <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="resource-item">
+                            <div class="resource-header">
+                                <h4>Unreal Engine</h4>
+                                <span class="resource-badge free">Free</span>
+                            </div>
+                            <p>Industry-standard engine with visual scripting and powerful graphics capabilities.</p>
+                            <a href="https://www.unrealengine.com/" target="_blank" class="resource-link">
+                                Download Unreal <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="resource-item">
+                            <div class="resource-header">
+                                <h4>Godot</h4>
+                                <span class="resource-badge free">Free & Open Source</span>
+                            </div>
+                            <p>Lightweight, user-friendly engine perfect for 2D games and indie development.</p>
+                            <a href="https://godotengine.org/" target="_blank" class="resource-link">
+                                Download Godot <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resource-category">
+                    <h3>
+                        <i class="fas fa-paint-brush"></i>
+                        Art & Design
+                    </h3>
+                    <div class="resource-list">
+                        <div class="resource-item">
+                            <div class="resource-header">
+                                <h4>Aseprite</h4>
+                                <span class="resource-badge paid">$19.99</span>
+                            </div>
+                            <p>Professional pixel art tool with animation support and tilemap features.</p>
+                            <a href="https://www.aseprite.org/" target="_blank" class="resource-link">
+                                Get Aseprite <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="resource-item">
+                            <div class="resource-header">
+                                <h4>GIMP</h4>
+                                <span class="resource-badge free">Free</span>
+                            </div>
+                            <p>Open-source image editor for creating and editing game assets.</p>
+                            <a href="https://www.gimp.org/" target="_blank" class="resource-link">
+                                Download GIMP <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="resource-item">
+                            <div class="resource-header">
+                                <h4>Blender</h4>
+                                <span class="resource-badge free">Free</span>
+                            </div>
+                            <p>Complete 3D creation suite for modeling, animation, and rendering.</p>
+                            <a href="https://www.blender.org/" target="_blank" class="resource-link">
+                                Download Blender <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resource-category">
+                    <h3>
+                        <i class="fas fa-music"></i>
+                        Audio
+                    </h3>
+                    <div class="resource-list">
+                        <div class="resource-item">
+                            <div class="resource-header">
+                                <h4>Audacity</h4>
+                                <span class="resource-badge free">Free</span>
+                            </div>
+                            <p>Audio editing software for recording and editing sound effects and music.</p>
+                            <a href="https://www.audacityteam.org/" target="_blank" class="resource-link">
+                                Download Audacity <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="resource-item">
+                            <div class="resource-header">
+                                <h4>Freesound</h4>
+                                <span class="resource-badge free">Free</span>
+                            </div>
+                            <p>Community-driven database of sound effects and audio clips.</p>
+                            <a href="https://freesound.org/" target="_blank" class="resource-link">
+                                Browse Sounds <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="resource-item">
+                            <div class="resource-header">
+                                <h4>LMMS</h4>
+                                <span class="resource-badge free">Free</span>
+                            </div>
+                            <p>Digital audio workstation for creating original music and soundtracks.</p>
+                            <a href="https://lmms.io/" target="_blank" class="resource-link">
+                                Download LMMS <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resource-category">
+                    <h3>
+                        <i class="fas fa-graduation-cap"></i>
+                        Learning
+                    </h3>
+                    <div class="resource-list">
+                        <div class="resource-item">
+                            <div class="resource-header">
+                                <h4>Unity Learn</h4>
+                                <span class="resource-badge free">Free</span>
+                            </div>
+                            <p>Official Unity tutorials and courses for all skill levels.</p>
+                            <a href="https://learn.unity.com/" target="_blank" class="resource-link">
+                                Start Learning <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="resource-item">
+                            <div class="resource-header">
+                                <h4>Game Development on YouTube</h4>
+                                <span class="resource-badge free">Free</span>
+                            </div>
+                            <p>Curated playlist of tutorials, devlogs, and educational content.</p>
+                            <a href="#" class="resource-link coming-soon">
+                                Coming Soon <i class="fas fa-clock"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="resource-item">
+                            <div class="resource-header">
+                                <h4>VGDC Discord</h4>
+                                <span class="resource-badge free">Free</span>
+                            </div>
+                            <p>Get real-time help and connect with club members 24/7.</p>
+                            <a href="https://discord.gg/7ZB5yRZnz7" target="_blank" class="resource-link">
+                                Join Discord <i class="fab fa-discord"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Club Projects</h2>
+                <p class="section-subtitle">Showcasing the incredible work of our members</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card placeholder">
+                    <div class="project-image">
+                        <div class="placeholder-icon">
+                            <i class="fas fa-plus-circle"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Your Project Here</h3>
+                        <p>This could be your game! Join VGDC and start creating amazing projects with fellow developers.</p>
+                        <div class="project-tags">
+                            <span class="tag">Unity</span>
+                            <span class="tag">2D</span>
+                            <span class="tag">Indie</span>
+                        </div>
+                        <a href="#join" class="project-link">
+                            Join & Create <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card placeholder">
+                    <div class="project-image">
+                        <div class="placeholder-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Game Jam Entry</h3>
+                        <p>Participate in our regular game jams and create something amazing in just 48 hours!</p>
+                        <div class="project-tags">
+                            <span class="tag">Game Jam</span>
+                            <span class="tag">48h</span>
+                            <span class="tag">Team</span>
+                        </div>
+                        <a href="#meetings" class="project-link">
+                            Learn More <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card placeholder">
+                    <div class="project-image">
+                        <div class="placeholder-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Collaborative Project</h3>
+                        <p>Work with multiple club members on larger projects and learn professional development practices.</p>
+                        <div class="project-tags">
+                            <span class="tag">Collaboration</span>
+                            <span class="tag">Git</span>
+                            <span class="tag">Professional</span>
+                        </div>
+                        <a href="#about" class="project-link">
+                            Get Involved <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-cta">
+                <h3>Ready to showcase your project?</h3>
+                <p>Submit your games and projects to be featured on our website!</p>
+                <a href="#join" class="btn btn-primary">Submit Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Section -->
+    <section id="join" class="join">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Join VGDC</h2>
+                <p class="section-subtitle">Ready to start your game development adventure?</p>
+            </div>
+
+            <div class="join-content">
+                <div class="join-info">
+                    <h3>How to Join</h3>
+                    <div class="join-steps">
+                        <div class="join-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Join Our Discord</h4>
+                                <p>Connect with current members and stay updated on all club activities.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="join-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Register on Engage</h4>
+                                <p>Officially join the club through Stetson's Engage platform to receive updates.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="join-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Attend a Meeting</h4>
+                                <p>Come to one of our bi-weekly meetings to meet the community and learn more.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="join-step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Start Creating</h4>
+                                <p>Begin working on projects, join teams, and bring your game ideas to life!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="membership-info">
+                        <h4>Membership Details</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Open to all Stetson University students</li>
+                            <li><i class="fas fa-check"></i> No prior experience required</li>
+                            <li><i class="fas fa-check"></i> Free to join and participate</li>
+                            <li><i class="fas fa-check"></i> All skill levels welcome</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="join-actions">
+                    <div class="join-card">
+                        <div class="card-icon">
+                            <i class="fab fa-discord"></i>
+                        </div>
+                        <h4>Discord Community</h4>
+                        <p>Join our active Discord server to chat with members, get help, and stay updated on events.</p>
+                        <a href="https://discord.gg/7ZB5yRZnz7" target="_blank" class="btn btn-discord">
+                            <i class="fab fa-discord"></i>
+                            Join Discord
+                        </a>
+                    </div>
+
+                    <div class="join-card">
+                        <div class="card-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>Email Us</h4>
+                        <p>Have questions? Want to get involved? Send us an email and we'll get back to you!</p>
+                        <a href="mailto:iwu@stetson.edu" class="btn btn-email">
+                            <i class="fas fa-envelope"></i>
+                            Email VGDC
+                        </a>
+                    </div>
+
+                    <div class="join-card">
+                        <div class="card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Join via Engage</h4>
+                        <p>Officially join the club through Stetson's Engage platform to receive updates and announcements.</p>
+                        <a href="https://stetson.campuslabs.com/engage/actioncenter/organization/videogamedev" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-sign-in-alt"></i>
+                            Join on Engage
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-gamepad"></i>
+                        <span>VGDC</span>
+                    </div>
+                    <p>Stetson University's Video Game Development Club - Where passion meets pixels.</p>
+                    <div class="social-links">
+                        <a href="https://discord.gg/7ZB5yRZnz7" target="_blank" aria-label="Discord">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="https://github.com/VGDC-SU" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:iwu@stetson.edu" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#meetings">Meetings</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://unity.com/" target="_blank">Unity</a></li>
+                        <li><a href="https://www.unrealengine.com/" target="_blank">Unreal Engine</a></li>
+                        <li><a href="https://godotengine.org/" target="_blank">Godot</a></li>
+                        <li><a href="https://learn.unity.com/" target="_blank">Unity Learn</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>
+                            <i class="fas fa-university"></i>
+                            Stetson University
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            iwu@stetson.edu
+                        </li>
+                        <li>
+                            <i class="fas fa-calendar"></i>
+                            Meetings: Every Other Wednesday
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 VGDC - Stetson University. Built with ❤️ by the game dev community.</p>
+                <p>This website is open source and contributions are welcome!</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
