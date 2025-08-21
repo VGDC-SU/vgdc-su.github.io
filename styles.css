@@ -81,6 +81,272 @@ h1, h2, h3, h4, h5, h6 {
     background-clip: text;
 }
 
+/* FEATURED ANNOUNCEMENT BANNER STYLES - EASILY REPLACEABLE/REMOVABLE */
+/* TO REMOVE: Delete entire announcement-banner section */
+/* TO MODIFY: Update styles within this section */
+.announcement-banner {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+    padding: var(--spacing-xl) 0;
+    margin-top: 70px; /* Account for fixed navbar */
+    position: relative;
+    overflow: hidden;
+    border-bottom: 3px solid var(--primary-dark);
+    animation: pulseGlow 3s ease-in-out infinite alternate;
+}
+
+.announcement-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="gamePattern" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/><rect x="5" y="5" width="2" height="2" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23gamePattern)"/></svg>');
+    opacity: 0.3;
+}
+
+.announcement-content {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-2xl);
+    box-shadow: var(--shadow-xl);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: var(--bg-primary);
+}
+
+.announcement-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+    flex-wrap: wrap;
+}
+
+.announcement-icon {
+    font-size: 3rem;
+    animation: bounce 2s infinite;
+}
+
+.announcement-header h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 900;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+}
+
+.announcement-badge {
+    background: var(--gradient-tertiary);
+    color: white;
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: var(--radius-lg);
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: pulse 2s infinite;
+    box-shadow: var(--shadow-md);
+}
+
+.announcement-intro {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+    color: var(--bg-secondary);
+    font-weight: 500;
+}
+
+.announcement-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+}
+
+.detail-card {
+    background: rgba(99, 102, 241, 0.1);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    border: 2px solid rgba(99, 102, 241, 0.2);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.detail-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-color);
+}
+
+.detail-card.highlight {
+    background: var(--gradient-primary);
+    color: white;
+    border-color: var(--primary-dark);
+    animation: highlightPulse 3s ease-in-out infinite;
+}
+
+.detail-card.highlight h4,
+.detail-card.highlight p {
+    color: white;
+}
+
+.detail-icon {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.detail-card h4 {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.detail-card ul {
+    list-style: none;
+    text-align: left;
+}
+
+.detail-card li {
+    margin-bottom: var(--spacing-sm);
+    padding-left: var(--spacing-lg);
+    position: relative;
+    color: var(--bg-secondary);
+}
+
+.detail-card li::before {
+    content: '🎯';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.event-time {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-xs) !important;
+}
+
+.event-location {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.food-note {
+    font-style: italic;
+    font-size: 0.95rem;
+    margin-top: var(--spacing-sm) !important;
+    color: var(--bg-secondary);
+}
+
+.announcement-cta {
+    text-align: center;
+    padding-top: var(--spacing-lg);
+    border-top: 2px solid rgba(99, 102, 241, 0.2);
+}
+
+.announcement-cta p {
+    margin-bottom: var(--spacing-lg);
+    color: var(--bg-secondary);
+}
+
+.announcement-cta a[href^="mailto"] {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.announcement-cta a[href^="mailto"]:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+.announcement-btn {
+    font-size: 1.125rem;
+    padding: var(--spacing-lg) var(--spacing-2xl);
+    background: var(--gradient-primary) !important;
+    border: none;
+    color: white !important;
+    box-shadow: var(--shadow-lg);
+    animation: buttonGlow 2s ease-in-out infinite alternate;
+}
+
+.announcement-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: var(--shadow-xl);
+}
+
+/* Announcement Banner Animations */
+@keyframes pulseGlow {
+    0% { box-shadow: 0 0 20px rgba(99, 102, 241, 0.3); }
+    100% { box-shadow: 0 0 40px rgba(99, 102, 241, 0.6); }
+}
+
+@keyframes highlightPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+}
+
+@keyframes buttonGlow {
+    0% { box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4); }
+    100% { box-shadow: 0 8px 25px rgba(99, 102, 241, 0.6); }
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+/* Responsive styles for announcement banner */
+@media (max-width: 768px) {
+    .announcement-banner {
+        padding: var(--spacing-lg) 0;
+    }
+    
+    .announcement-content {
+        padding: var(--spacing-lg);
+    }
+    
+    .announcement-header {
+        gap: var(--spacing-md);
+    }
+    
+    .announcement-details {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    .detail-card {
+        padding: var(--spacing-md);
+    }
+}
+
+@media (max-width: 480px) {
+    .announcement-icon {
+        font-size: 2rem;
+    }
+    
+    .announcement-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .announcement-intro {
+        font-size: 1rem;
+    }
+}
+/* END FEATURED ANNOUNCEMENT BANNER STYLES */
+
 /* Navigation */
 .navbar {
     position: fixed;
