@@ -85,12 +85,13 @@ h1, h2, h3, h4, h5, h6 {
 /* TO REMOVE: Delete entire announcement-banner section */
 /* TO MODIFY: Update styles within this section */
 .announcement-banner {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+    background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
     padding: var(--spacing-xl) 0;
     margin-top: 70px; /* Account for fixed navbar */
     position: relative;
     overflow: hidden;
-    border-bottom: 3px solid var(--primary-dark);
+    border-bottom: 3px solid var(--primary-color);
+    border-top: 3px solid var(--primary-color);
     animation: pulseGlow 3s ease-in-out infinite alternate;
 }
 
@@ -101,20 +102,20 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="gamePattern" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/><rect x="5" y="5" width="2" height="2" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23gamePattern)"/></svg>');
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="gamePattern" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="rgba(99,102,241,0.1)"/><rect x="5" y="5" width="2" height="2" fill="rgba(99,102,241,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23gamePattern)"/></svg>');
     opacity: 0.3;
 }
 
 .announcement-content {
     position: relative;
     z-index: 2;
-    background: rgba(255, 255, 255, 0.95);
+    background: var(--bg-primary);
     border-radius: var(--radius-xl);
     padding: var(--spacing-2xl);
     box-shadow: var(--shadow-xl);
     backdrop-filter: blur(10px);
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    color: var(--bg-primary);
+    border: 2px solid rgba(99, 102, 241, 0.3);
+    color: var(--text-primary);
 }
 
 .announcement-header {
@@ -160,7 +161,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.6;
     text-align: center;
     margin-bottom: var(--spacing-xl);
-    color: var(--bg-secondary);
+    color: var(--text-secondary);
     font-weight: 500;
 }
 
@@ -172,7 +173,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .detail-card {
-    background: rgba(99, 102, 241, 0.1);
+    background: var(--bg-secondary);
     padding: var(--spacing-lg);
     border-radius: var(--radius-lg);
     border: 2px solid rgba(99, 102, 241, 0.2);
@@ -189,7 +190,7 @@ h1, h2, h3, h4, h5, h6 {
 .detail-card.highlight {
     background: var(--gradient-primary);
     color: white;
-    border-color: var(--primary-dark);
+    border-color: var(--primary-color);
     animation: highlightPulse 3s ease-in-out infinite;
 }
 
@@ -207,7 +208,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     font-size: 1.25rem;
     margin-bottom: var(--spacing-md);
-    color: var(--primary-color);
+    color: var(--text-primary);
     font-weight: 700;
 }
 
@@ -220,7 +221,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: var(--spacing-sm);
     padding-left: var(--spacing-lg);
     position: relative;
-    color: var(--bg-secondary);
+    color: var(--text-secondary);
 }
 
 .detail-card li::before {
@@ -246,7 +247,7 @@ h1, h2, h3, h4, h5, h6 {
     font-style: italic;
     font-size: 0.95rem;
     margin-top: var(--spacing-sm) !important;
-    color: var(--bg-secondary);
+    color: var(--text-secondary);
 }
 
 .announcement-cta {
@@ -257,7 +258,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .announcement-cta p {
     margin-bottom: var(--spacing-lg);
-    color: var(--bg-secondary);
+    color: var(--text-secondary);
 }
 
 .announcement-cta a[href^="mailto"] {
