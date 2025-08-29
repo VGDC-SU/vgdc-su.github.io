@@ -16,6 +16,18 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="VGDC">
     <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect width='180' height='180' fill='%236366f1' rx='40'/><text x='90' y='110' font-family='Arial' font-size='70' text-anchor='middle' fill='white'>🎮</text></svg>">
+    <!-- Cache busting with version number -->
+    <link rel="stylesheet" href="styles.css?v=20250829">
+    <script>
+        // Force service worker to update
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.getRegistrations().then(function(registrations) {
+                for(let registration of registrations) {
+                    registration.update();
+                }
+            });
+        }
+    </script>
 </head>
 <body>
     <!-- Navigation -->

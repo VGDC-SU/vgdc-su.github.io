@@ -1,7 +1,7 @@
 // VGDC Website Service Worker
-// Version 1.0.0
+// Version 1.0.1
 
-const CACHE_NAME = 'vgdc-cache-v1';
+const CACHE_NAME = 'vgdc-cache-v2-' + new Date().toISOString().slice(0,10);
 const urlsToCache = [
   '/',
   '/index.html',
